@@ -37,7 +37,7 @@ header{
     color: #461400;
     padding: 25px;
 }
-.navBar ul :hover{
+.navBar ul li :hover{
     text-decoration: underline;
 }
 /*main index*/
@@ -60,6 +60,10 @@ header{
 
 footer{
     background-color:#7fb069 ;
+}
+footer div a :hover{
+    transform: scale(1.12);
+    transition: all 0.1s;
 }
 /*productos*/*
 .productosInfo{
