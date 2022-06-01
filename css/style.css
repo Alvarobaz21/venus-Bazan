@@ -45,7 +45,8 @@ header{
     background-color: #fffbbd;
 }
 .imgMujer{
-    height: 960px;
+    height: 1100px;
+    width: 960px;
 }
 .mainIndex div h2{
     font-family: comfortaa;
@@ -70,9 +71,7 @@ footer div a :hover{
     background-color: #e6aa68 ;
 }
 .productosInfo img{
-    border:rgba(255, 213, 134, 0.76) 4px inset;
-    margin: 0;
-    height: 400px;
+    height: 520px;
 }
 .productosInfo div h2{
     font-family: comfortaa;
@@ -93,6 +92,10 @@ footer div a :hover{
 .mainProductos div h3 a{
     font-family:PTSansCaption;
     text-decoration: none;
+}
+.producto :hover{
+    transform: scale(1.09);
+    transition: all 0.4s;
 }
 
 /*contacto*/
@@ -236,7 +239,7 @@ footer div a img{
     "inciensos ceniceros" ;
 }
 .mainProductos .tituloProducto{
-    margin-left: 600px;
+    margin-left: 750px;
 }
 .tituloProductos{
     grid-area: tituProductos;
