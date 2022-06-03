@@ -22,7 +22,16 @@ header{
     height: 150px;
 }
 
+ /*nav bootstrap*/
+.divNav{
+    display: flex;
+    justify-content: right;
+}
+
+
+
 /*nav*/
+
 
 .navBar ul li{
     display: inline-block;
@@ -100,18 +109,30 @@ footer div a :hover{
     transition: all 0.4s;
 }
 
+/*contacto bootstrap*/
+.formModificado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+.formModificado div{
+    width: 300px;
+}
 /*contacto*/
 
 .form {
     background-color: #e6aa68;
     background-image: linear-gradient(to right, #e6aa68 13%, #ff8400 75%);
-    height: 500px;
+    height: 1000px;
 }
 .form h1{
     font-family: comfortaa;
     text-align: center;
     font-weight: bolder;
     font-size: 40px;
+    padding-top: 20px;
 }
 .form p{
     font-family: PTSansCaption;
