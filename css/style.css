@@ -98,9 +98,8 @@ footer{
 footer h2{
     color:rgb(46, 31, 21);
 }
-footer div a :hover{
+.linkScale:hover{
     transform: scale(1.12);
-    transition: all 0.08s;
 }
 footer{
     display: flex;
@@ -119,6 +118,7 @@ footer div a{
 }
 footer div a img{
     height: 50px;
+    transition: all 0.12s;
 }
 
 /*productos*/*
