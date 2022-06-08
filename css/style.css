@@ -11,6 +11,7 @@
     font-family:PTSansCaption;
     src: url(../fonts/PTSansCaption-Regular.ttf);
 }
+
 /*header*/
 
 header{
@@ -18,44 +19,51 @@ header{
     background-image: linear-gradient(315deg, #b6440f 0%, #ff9e35 74%);
     border: #ffae0065 1px solid;
 }
+
 .logo{
     height: 150px;
 }
+header{
+    display: grid;
+    grid-template-columns: 25%, 75%;
+    grid-template-areas:
+    "divLogo divNav";
+}
+.divLogo{
+    grid-area: divLogo;
+}
+
+.divNav{
+    text-align: right;
+    padding: 55px;
+    grid-area: divNav;
+}
 
  /*nav bootstrap*/
+
 .divNav{
     display: flex;
     justify-content: right;
 }
-
-
-
-/*nav*/
-
-
-.navBar ul li{
-    display: inline-block;
-    list-style: none;
-    font-family: comfortaa;
-    font-weight: bold;
-
+.navMod{
+    font-size: large;
 }
-.navBar ul li a{
-    text-decoration: none;
-    font-size: 15px;
-    color: #461400;
-    padding: 25px;
+.navMod ul li{
+    margin-left:25px;
+    
 }
-.navBar ul li :hover{
+.navMod ul li:hover{
     text-decoration: underline;
 }
+
+
 /*main index*/
 .mainIndex {
     background-color: #fffbbd;
     background-image: linear-gradient(315deg, #fffbbd 0%,  #fff67a 76%);
 }
 .imgMujer{
-    height: 960px;
+    width: 100%;
 }
 .mainIndex div h2{
     font-family: comfortaa;
@@ -65,157 +73,35 @@ header{
     font-family:PTSansCaption;
     font-size: 25px;
 }
+.mainIndex{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.imgMujer{
+    width: 100%;
+}
+.mainIndex div h2{
+    text-align: center;
+    padding: 15px;
+}
+.mainIndex div p{
+    text-align: center;
+}
 
 /*footer*/
 
 footer{
     background-color: #63d471;
-    background-image: linear-gradient(315deg, #235729 15%, #2abe63 74%);
+    background-image: linear-gradient(315deg, #3dbd4c 15%, #1a7e40 74%);
 
+}
+footer h2{
+    color:rgb(46, 31, 21);
 }
 footer div a :hover{
     transform: scale(1.12);
     transition: all 0.08s;
 }
-/*productos*/*
-.productosInfo{
-    background-color: #e6aa68 ;
-}
-.productosInfo img{
-    height: 450px;
-}
-.productosInfo div h2{
-    font-family: comfortaa;
-   /* font-size: 50px;*/
-}
-.productosInfo div p{
-    font-family: PTSansCaption;
-    /*font-size: 40px;*/
-}
-/*main productos*/
-.mainProductos{
-    background-color:#fffbbd;
-}
-.mainProductos h2{
-    font-family: comfortaa;
-    font-size: 50px;
-}
-.mainProductos div h3 a{
-    font-family:PTSansCaption;
-    text-decoration: none;
-}
-.producto :hover{
-    transform: scale(1.09);
-    transition: all 0.4s;
-}
-
-/*contacto bootstrap*/
-.formModificado{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-}
-.formModificado div{
-    width: 300px;
-}
-/*contacto*/
-
-.form {
-    background-color: #e6aa68;
-    background-image: linear-gradient(to right, #e6aa68 13%, #ff8400 75%);
-    height: 1000px;
-}
-.form h1{
-    font-family: comfortaa;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 40px;
-    padding-top: 20px;
-}
-.form p{
-    font-family: PTSansCaption;
-    font-weight: bold;
-    text-align: center;
-    font-size: 20px;
-}
-.form form{
-    font-family: PTSansCaption;
-    text-align: center;
-}
-
-/*¿Quienes somos?*/
-
-.tituloQuienesSomos{
-    font-family: comfortaa;
-    padding: 20px;
-    text-align: center;
-    background-color: #fffbbd;
-}
-.infoQuienesSomos{
-    background-color: #e6aa68;
-}
-.infoQuienesSomos p{
-    font-family: PTSansCaption;
-}
-.infoQuienesSomos div img{
-    height: 750px;
-}
-
-/*productos*/
-
-.mainProductosStock{
-    background-color: #e6aa68;    
-}
-.mainProductosStock h1{
-    font-family: comfortaa;
-    text-align: center;
-    padding: 20px;
-    background-color:#fffbbd;
-}
-.mainProductosStock div section p{
-    font-family: PTSansCaption;
-}
-.mainProductosStock div section img{
-    height: 150px;
-    padding: 10px;
-}
-
-/*acomodando header*/
-
-header{
-    display: grid;
-    grid-template-rows:repeat(1, 130px);
-    grid-template-columns: auto;
-    grid-template-areas:
-    "divLogo divNav";
-}
-.divLogo{
-    grid-area: divLogo;
-}
-.divNav{
-    text-align: right;
-    padding: 55px;
-    grid-area: divNav;
-}
-
-/*acomodando main index*/
-
-.mainIndex{
-    display: flex;
-    flex-direction: row;
-}
-.mainIndex div h2{
-    text-align: center;
-    padding: 20px;
-}
-.mainIndex div p{
-    text-align: center;
-    padding:30px;
-}
-/*acomodando footer*/
-
 footer{
     display: flex;
     flex-direction: row;
@@ -235,37 +121,69 @@ footer div a img{
     height: 50px;
 }
 
-/*acomodando section productos*/
+/*productos*/*
+
 .productosInfo{
-    display: flex;
-    align-items: center;
+    background-color: #e6aa68 ;
 }
-.productosInfo div{
-    text-align: center;
-}
-.productosInfo div h2{
-    font-size: 50px;
-}
-.productosInfo div p{
-    font-size: 25px;
-}
-/*acomodando main productos*/
-.mainProductos{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    justify-items: center;
-    align-items: center;
-    grid-template-areas: 
-    "tituProductos tituProductos"
-    "macetas accesorios"
-    "inciensos ceniceros" ;
-}
-.mainProductos .tituloProducto{
-    margin-left: 650px;
+.productosInfo img{
+    width: 100%;
 }
 .tituloProductos{
-    grid-area: tituProductos;
+    font-family: comfortaa;
+    font-size: 50px;
+    padding: 5px;
+}
+.productosInfo div p{
+    font-family: PTSansCaption;
+    font-size: 40px;
+}
+/*main productos*/
+.mainProductos{
+    background-color:#fffbbd;
+}
+.tituloProductos{
+    font-family: comfortaa;
+    font-size: 50px;
+    background-color: #ebff7a;
+    padding: 15px;
+    margin:0;
+}
+.mainProductos div h3 a{
+    font-family:PTSansCaption;
+    text-decoration: none;
+    color: rgb(11, 0, 71);
+}
+.producto :hover{
+    transform: scale(1.09);
+    transition: all 0.4s;
+}
+/*acomodando section productos*/
+.productosInfo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.productosInfo div h2{
+    text-align: center;
+    padding: 15px;
+    font-family: comfortaa;
+}
+.productosInfo div p{
+    text-align: center;
+    font-size: larger;
+    padding: 5px;
+}
+/*acomodando main productos*/
+.tituloProductos{
+    text-align: center;
+}
+.mainProductos{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "macetas accesorios"
+    "inciensos ceniceros";
 }
 .divMacetas{
     grid-area: macetas;
@@ -295,13 +213,90 @@ footer div a img{
     text-align: center;
     margin: 15px;
 }
-.mainProductos div h3 a{
-    font-size: 25px;
+
+/*contacto bootstrap*/
+.formModificado{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    margin:0;
 }
-.divMacetas a img{
+.formModificado div{
+    width: 300px;
+}
+/*contacto*/
+
+.form {
+    background-color: #e6a9688f;
+    background-image: linear-gradient(to right, #e6a96896 13%, #ff8400cb 75%);
+    padding-bottom: 50px;
+}
+.form h1 {
+    font-family: comfortaa;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 40px;
+    padding-top: 20px;
+}
+.form p{
+    font-family: PTSansCaption;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+.form form{
+    font-family: PTSansCaption;
+    text-align: center;
+}
+
+/*¿Quienes somos?*/
+
+.tituloQuienesSomos{
+    font-family: comfortaa;
+    padding: 20px;
+    text-align: center;
+    background-color: #fffbbd;
+    margin:0;
+}
+.infoQuienesSomos{
+    background-color: #e6aa68;
+}
+.infoQuienesSomos p{
+    font-family: PTSansCaption;
+    margin:15px;
+    text-align: center;
+    font-size: 25px;;
+}
+.infoQuienesSomos div img{
+    width: 100%;
+}
+.infoQuienesSomos{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/*productos*/
+
+.mainProductosStock{
+    background-color: #e6aa68;    
+}
+.mainProductosStock h1{
+    font-family: comfortaa;
+    text-align: center;
+    padding: 20px;
+    background-color:#fffbbd;
+}
+.mainProductosStock div section p{
+    font-family: PTSansCaption;
+}
+.mainProductosStock div section img{
     height: 150px;
+    padding: 10px;
 }
- 
+
+
 /*vista tablet index*/
 
 @media screen and ( max-width: 768px){
@@ -312,7 +307,6 @@ footer div a img{
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
         "divLogo divNav";
-        height: 140px;
     }
     .divLogo{
         grid-area: divLogo;
