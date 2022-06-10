@@ -1,0 +1,23 @@
+{
+  "name": "trabajo-sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alvarobaz21/venus-Bazan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alvarobaz21/venus-Bazan/issues"
+  },
+  "homepage": "https://github.com/Alvarobaz21/venus-Bazan#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

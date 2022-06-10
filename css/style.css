@@ -1,434 +1,443 @@
+.mainIndex {
+  background-color: #fffbbd;
+  background-image: linear-gradient(315deg, #fffbbd 0%, #fff67a 76%);
+}
+.mainIndex div img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 /*fonts*/
 @font-face{
-    font-family: comfortaa ;
-    src: url(../fonts/Comfortaa-VariableFont_wght.ttf);
+  font-family: comfortaa ;
+  src: url(../fonts/Comfortaa-VariableFont_wght.ttf);
 }
 @font-face {
-    font-family:PTSansCaption;
-    src: url(../fonts/PTSansCaption-Regular.ttf);
+  font-family:PTSansCaption;
+  src: url(../fonts/PTSansCaption-Regular.ttf);
 }
 
 /*header*/
 
 header{
-    background-color: #ff9741;
-    background-image: linear-gradient(315deg, #b6440f 0%, #ff9e35 74%);
-    border: #ffae0065 1px solid;
+  background-color: #ff9741;
+  background-image: linear-gradient(315deg, #b6440f 0%, #ff9e35 74%);
+  border: #ffae0065 1px solid;
 }
 
 .logo{
-    height: 150px;
+  height: 150px;
 }
 header{
-    display: grid;
-    grid-template-columns: 25%, 75%;
-    grid-template-areas:
-    "divLogo divNav";
+  display: grid;
+  grid-template-columns: 25%, 75%;
+  grid-template-areas:
+  "divLogo divNav";
 }
 .divLogo{
-    grid-area: divLogo;
+  grid-area: divLogo;
 }
 
 .divNav{
-    text-align: right;
-    padding: 55px;
-    grid-area: divNav;
+  text-align: right;
+  padding: 55px;
+  grid-area: divNav;
 }
 
- /*nav bootstrap*/
+/*nav bootstrap*/
 
 .divNav{
-    display: flex;
-    justify-content: right;
+  display: flex;
+  justify-content: right;
 }
 .navMod{
-    font-size: large;
+  font-size: large;
 }
 .navMod ul li{
-    margin-left:25px;
-    
+  margin-left:25px;
+  
 }
 .navMod ul li:hover{
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 
 /*main index*/
 .mainIndex {
-    background-color: #fffbbd;
-    background-image: linear-gradient(315deg, #fffbbd 0%,  #fff67a 76%);
+  background-color: #fffbbd;
+  background-image: linear-gradient(315deg, #fffbbd 0%,  #fff67a 76%);
 }
 .imgMujer{
-    width: 100%;
+  width: 100%;
 }
 .mainIndex div h2{
-    font-family: comfortaa;
-    
+  font-family: comfortaa;
+  
 }
 .mainIndex div p{
-    font-family:PTSansCaption;
-    font-size: 25px;
+  font-family:PTSansCaption;
+  font-size: 25px;
 }
 .mainIndex{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .imgMujer{
-    width: 100%;
+  width: 100%;
 }
 .mainIndex div h2{
-    text-align: center;
-    padding: 15px;
+  text-align: center;
+  padding: 15px;
 }
 .mainIndex div p{
-    text-align: center;
+  text-align: center;
 }
 
 /*footer*/
 
 footer{
-    background-color: #63d471;
-    background-image: linear-gradient(315deg, #3dbd4c 15%, #1a7e40 74%);
+  background-color: #63d471;
+  background-image: linear-gradient(315deg, #3dbd4c 15%, #1a7e40 74%);
 
 }
 footer h2{
-    color:rgb(46, 31, 21);
+  color:rgb(46, 31, 21);
 }
 .linkScale:hover{
-    transform: scale(1.12);
+  transform: scale(1.12);
 }
 footer{
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 footer h2{
-    font-family: comfortaa;
-    font-size: 30px;
-    padding: 15px;
+  font-family: comfortaa;
+  font-size: 30px;
+  padding: 15px;
 }
 footer div{
-    padding: 5px;
+  padding: 5px;
 }
 footer div a{
-    padding: 10px;
+  padding: 10px;
 }
 footer div a img{
-    height: 50px;
-    transition: all 0.12s;
+  height: 50px;
+  transition: all 0.12s;
 }
 
 /*productos*/*
 
 .productosInfo{
-    background-color: #e6aa68 ;
+  background-color: #e6aa68 ;
 }
 .productosInfo img{
-    width: 100%;
+  width: 100%;
 }
 .tituloProductos{
-    font-family: comfortaa;
-    font-size: 50px;
-    padding: 5px;
+  font-family: comfortaa;
+  font-size: 50px;
+  padding: 5px;
 }
 .productosInfo div p{
-    font-family: PTSansCaption;
-    font-size: 40px;
+  font-family: PTSansCaption;
+  font-size: 40px;
 }
 /*main productos*/
 .mainProductos{
-    background-color:#fffbbd;
+  background-color:#fffbbd;
 }
 .tituloProductos{
-    font-family: comfortaa;
-    font-size: 50px;
-    background-color: #ebff7a;
-    padding: 15px;
-    margin:0;
+  font-family: comfortaa;
+  font-size: 50px;
+  background-color: #ebff7a;
+  padding: 15px;
+  margin:0;
 }
 .mainProductos div h3 a{
-    font-family:PTSansCaption;
-    text-decoration: none;
-    color: rgb(11, 0, 71);
+  font-family:PTSansCaption;
+  text-decoration: none;
+  color: rgb(11, 0, 71);
 }
 .producto :hover{
-    transform: scale(1.09);
-    transition: all 0.4s;
+  transform: scale(1.09);
+  transition: all 0.4s;
 }
 /*acomodando section productos*/
 .productosInfo{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 .productosInfo div h2{
-    text-align: center;
-    padding: 15px;
-    font-family: comfortaa;
+  text-align: center;
+  padding: 15px;
+  font-family: comfortaa;
 }
 .productosInfo div p{
-    text-align: center;
-    font-size: larger;
-    padding: 5px;
+  text-align: center;
+  font-size: larger;
+  padding: 5px;
 }
 /*acomodando main productos*/
 .tituloProductos{
-    text-align: center;
+  text-align: center;
 }
 .mainProductos{
-    display: grid;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "macetas accesorios"
-    "inciensos ceniceros";
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "macetas accesorios"
+  "inciensos ceniceros";
 }
 .divMacetas{
-    grid-area: macetas;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 15px;
+  grid-area: macetas;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 15px;
 }
 .divAccesorios{
-    grid-area: accesorios;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 15px;
+  grid-area: accesorios;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 15px;
 }
 .divInciensos{
-    grid-area: inciensos;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 15px;
+  grid-area: inciensos;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 15px;
 }
 .divCeniceros{
-    grid-area:ceniceros;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 15px;
+  grid-area:ceniceros;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 15px;
 }
 
 /*contacto bootstrap*/
 .formModificado{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-    margin:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  margin:0;
 }
 .formModificado div{
-    width: 300px;
+  width: 300px;
 }
 /*contacto*/
 
 .form {
-    background-color: #e6a9688f;
-    background-image: linear-gradient(to right, #e6a96896 13%, #ff8400cb 75%);
-    padding-bottom: 50px;
+  background-color: #e6a9688f;
+  background-image: linear-gradient(to right, #e6a96896 13%, #ff8400cb 75%);
+  padding-bottom: 50px;
 }
 .form h1 {
-    font-family: comfortaa;
-    text-align: center;
-    font-weight: bolder;
-    font-size: 40px;
-    padding-top: 20px;
+  font-family: comfortaa;
+  text-align: center;
+  font-weight: bolder;
+  font-size: 40px;
+  padding-top: 20px;
 }
 .form p{
-    font-family: PTSansCaption;
-    font-weight: bold;
-    text-align: center;
-    font-size: 20px;
+  font-family: PTSansCaption;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
 }
 .form form{
-    font-family: PTSansCaption;
-    text-align: center;
+  font-family: PTSansCaption;
+  text-align: center;
 }
 
 /*¿Quienes somos?*/
 
 .tituloQuienesSomos{
-    font-family: comfortaa;
-    padding: 20px;
-    text-align: center;
-    background-color: #fffbbd;
-    margin:0;
+  font-family: comfortaa;
+  padding: 20px;
+  text-align: center;
+  background-color: #fffbbd;
+  margin:0;
 }
 .infoQuienesSomos{
-    background-color: #e6aa68;
+  background-color: #e6aa68;
 }
 .infoQuienesSomos p{
-    font-family: PTSansCaption;
-    margin:15px;
-    text-align: center;
-    font-size: 25px;;
+  font-family: PTSansCaption;
+  margin:15px;
+  text-align: center;
+  font-size: 25px;;
 }
 .infoQuienesSomos div img{
-    width: 100%;
+  width: 100%;
 }
 .infoQuienesSomos{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 /*productos*/
 
 .mainProductosStock{
-    background-color: #e6aa68;    
+  background-color: #e6aa68;    
 }
 .mainProductosStock h1{
-    font-family: comfortaa;
-    text-align: center;
-    padding: 20px;
-    background-color:#fffbbd;
+  font-family: comfortaa;
+  text-align: center;
+  padding: 20px;
+  background-color:#fffbbd;
 }
 .mainProductosStock div section p{
-    font-family: PTSansCaption;
+  font-family: PTSansCaption;
 }
 .mainProductosStock div section img{
-    height: 150px;
-    padding: 10px;
+  height: 150px;
+  padding: 10px;
 }
 
 
 /*vista tablet index*/
 
 @media screen and ( max-width: 768px){
-    /*header tablet*/
-    header{
-        display: grid;
-        grid-template-rows:auto;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-        "divLogo divNav";
-    }
-    .divLogo{
-        grid-area: divLogo;
-    }
-    .divNav{
-        text-align: right;
-        padding: 15px;
-        grid-area: divNav;
-    }
-    .divNav nav ul{
-        display: flex;
-        flex-direction: column;
-    }
-    .divNav nav ul li{
-        padding: 4px;
-    }
+  /*header tablet*/
+  header{
+      display: grid;
+      grid-template-rows:auto;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas:
+      "divLogo divNav";
+  }
+  .divLogo{
+      grid-area: divLogo;
+  }
+  .divNav{
+      text-align: right;
+      padding: 15px;
+      grid-area: divNav;
+  }
+  .divNav nav ul{
+      display: flex;
+      flex-direction: column;
+  }
+  .divNav nav ul li{
+      padding: 4px;
+  }
 
-    /*main index tablet*/
+  /*main index tablet*/
 
-    .mainIndex{
-        display: flex;
-        flex-direction: column;
-    }
-    .mainIndex div h2{
-        text-align: center;
-        padding: 10px;
-    }
-    .mainIndex div p{
-        text-align: center;
-        padding:30px;
-    }
+  .mainIndex{
+      display: flex;
+      flex-direction: column;
+  }
+  .mainIndex div h2{
+      text-align: center;
+      padding: 10px;
+  }
+  .mainIndex div p{
+      text-align: center;
+      padding:30px;
+  }
 
-    /*footer tablet*/
-    footer{
-        display: flex;
-        flex-direction: row;
-    }
-    footer h2{
-        margin: 10px;
-    }
-    footer div{
-        margin-top: 12px;
-        margin-left:180px;
-        
-    }
-    footer div a{
-        padding:10px;
-    }
-    /*productos, section teblet*/
-    
-    .productosInfo{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-    .productosInfo img{
-        height: 420px;
+  /*footer tablet*/
+  footer{
+      display: flex;
+      flex-direction: row;
+  }
+  footer h2{
+      margin: 10px;
+  }
+  footer div{
+      margin-top: 12px;
+      margin-left:180px;
+      
+  }
+  footer div a{
+      padding:10px;
+  }
+  /*productos, section teblet*/
+  
+  .productosInfo{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+  }
+  .productosInfo img{
+      height: 420px;
 
-    }
-    .productosInfo div{
-        text-align: center;
-    }
-    .productosInfo div h2{
-        font-size: 50px;
-    }
-    .productosInfo div p{
-        font-size: 25px;
-    }
-    
-    
-    /*acomodando main productos tablet*/
-    .mainProductos{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
-        justify-items: center;
-        grid-template-areas: 
-        "tituProductos"
-        "macetas"
-        "accesorios"
-        "inciensos" 
-        "ceniceros";
-    }
-    .mainProductos .tituloProducto{
-        margin: 0;
-    }
-    .tituloProductos{
-        grid-area: tituProductos;
-    }
-    .divMacetas{
-        grid-area: macetas;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-bottom:30px;
-    }
-    .divAccesorios{
-        grid-area: accesorios;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-top:30px;
-    }
-    .divInciensos{
-        grid-area: inciensos;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-top: 30px;
-    }
-    .divCeniceros{
-        grid-area:ceniceros;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        margin-top: 30px;
-    }
-    .mainProductos div h3 a{
-        font-size: 40px;
-        margin: 10px;
-    }
-    .mainProductos div a img{
-        height: 300px;
-    }
+  }
+  .productosInfo div{
+      text-align: center;
+  }
+  .productosInfo div h2{
+      font-size: 50px;
+  }
+  .productosInfo div p{
+      font-size: 25px;
+  }
+  
+  
+  /*acomodando main productos tablet*/
+  .mainProductos{
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      justify-items: center;
+      grid-template-areas: 
+      "tituProductos"
+      "macetas"
+      "accesorios"
+      "inciensos" 
+      "ceniceros";
+  }
+  .mainProductos .tituloProducto{
+      margin: 0;
+  }
+  .tituloProductos{
+      grid-area: tituProductos;
+  }
+  .divMacetas{
+      grid-area: macetas;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom:30px;
+  }
+  .divAccesorios{
+      grid-area: accesorios;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top:30px;
+  }
+  .divInciensos{
+      grid-area: inciensos;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 30px;
+  }
+  .divCeniceros{
+      grid-area:ceniceros;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-top: 30px;
+  }
+  .mainProductos div h3 a{
+      font-size: 40px;
+      margin: 10px;
+  }
+  .mainProductos div a img{
+      height: 300px;
+  }
 }
