@@ -1,9 +1,22 @@
-.mainIndex {
-  background-color: #fffbbd;
-  background-image: linear-gradient(315deg, #fffbbd 0%, #fff67a 76%);
+header {
+  background-color: #ff9741;
+  background-image: linear-gradient(315deg, #b6440f 0%, #ff9e35 74%);
+  border: rgba(255, 174, 0, 0.3960784314) 1px solid;
+  display: grid;
+  grid-template-columns: 25%, 75%;
+  grid-template-areas: "divLogo divNav";
 }
-.mainIndex div img {
-  width: 100%;
+header .divLogo {
+  grid-area: divLogo;
+}
+header .divLogo a img {
+  height: 150px;
+}
+
+.divNav {
+  text-align: right;
+  padding: 55px;
+  grid-area: divNav;
 }
 
 /*# sourceMappingURL=style.css.map */
@@ -22,7 +35,7 @@
 }
 
 /*header*/
-
+/*
 header{
   background-color: #ff9741;
   background-image: linear-gradient(315deg, #b6440f 0%, #ff9e35 74%);

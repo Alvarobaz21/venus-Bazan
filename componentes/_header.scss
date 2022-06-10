@@ -1,0 +1,25 @@
+header{
+    background-color: #ff9741;
+    background-image: linear-gradient(315deg, #b6440f 0%, #ff9e35 74%);
+    border: #ffae0065 1px solid;
+    display: grid;
+    grid-template-columns: 25%, 75%;
+    grid-template-areas:
+    "divLogo divNav";
+    .divLogo{
+        grid-area:divLogo;
+        a{
+            img{
+                width: 100%;
+
+            }
+        }
+    }
+}
+.divNav{
+    text-align: right;
+    padding: 55px;
+    grid-area: divNav;
+    display: flex;
+    justify-content: right;
+}
