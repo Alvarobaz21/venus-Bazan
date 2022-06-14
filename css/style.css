@@ -21,36 +21,16 @@ header{
 }
 
 .logo{
-    height: 150px;
-}
-header{
-    display: grid;
-    grid-template-columns: 25%, 75%;
-    grid-template-areas:
-    "divLogo divNav";
-}
-.divLogo{
-    grid-area: divLogo;
-}
-
-.divNav{
-    text-align: right;
-    padding: 55px;
-    grid-area: divNav;
-}
-
- /*nav bootstrap*/
-
-.divNav{
-    display: flex;
-    justify-content: right;
+    max-height: 100px;
+    width: 100%;
 }
 .navMod{
-    font-size: large;
+    font-size:medium;
+    display: flex;
+    justify-content: end;
 }
 .navMod ul li{
     margin-left:25px;
-    
 }
 .navMod ul li:hover{
     text-decoration: underline;
@@ -83,6 +63,7 @@ header{
 .mainIndex div h2{
     text-align: center;
     padding: 15px;
+    margin:0 !important;
 }
 .mainIndex div p{
     text-align: center;
@@ -92,8 +73,9 @@ header{
 
 footer{
     background-color: #63d471;
-    background-image: linear-gradient(315deg, #3dbd4c 15%, #1a7e40 74%);
-
+    background-image: linear-gradient(315deg, #328b3c 15%, #36aa63 74%);
+    display:grid;
+    grid-template-columns:90% 10%;
 }
 footer h2{
     color:rgb(46, 31, 21);
@@ -101,26 +83,23 @@ footer h2{
 .linkScale:hover{
     transform: scale(1.12);
 }
-footer{
-    display: flex;
-    flex-direction: row;
-}
 footer h2{
     font-family: comfortaa;
     font-size: 30px;
     padding: 15px;
+    margin: 0;
 }
 footer div{
-    padding: 5px;
-}
-footer div a{
-    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    max-width: 120px;
 }
 footer div a img{
-    height: 50px;
+    max-height: 45px;
     transition: all 0.12s;
+    margin: 3px;
 }
-
 /*productos*/*
 
 .productosInfo{
@@ -128,6 +107,7 @@ footer div a img{
 }
 .productosInfo img{
     width: 100%;
+    object-fit: cover;
 }
 .tituloProductos{
     font-family: comfortaa;
@@ -172,6 +152,12 @@ footer div a img{
     text-align: center;
     font-size: larger;
     padding: 5px;
+}
+.divMacetas, .divAccesorios, .divCeniceros, .divInciensos{
+    padding: 15px;
+    border: #1a7e40 solid 3px;
+    border-radius: 60px;
+    background-color: #1a7e4069;
 }
 /*acomodando main productos*/
 .tituloProductos{
@@ -268,9 +254,11 @@ footer div a img{
     margin:15px;
     text-align: center;
     font-size: 25px;;
+    overflow: hidden;
 }
-.infoQuienesSomos div img{
+.infoQuienesSomos img{
     width: 100%;
+    height: 100%;
 }
 .infoQuienesSomos{
     display: grid;
@@ -282,48 +270,45 @@ footer div a img{
 .mainProductosStock{
     background-color: #e6aa68;    
 }
-.mainProductosStock h1{
+.tituloProductosStock{
     font-family: comfortaa;
     text-align: center;
     padding: 20px;
     background-color:#fffbbd;
+    margin: 0;
 }
-.mainProductosStock div section p{
+.mainProductosStock{
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.mainProductosStock div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin:5px;
+    border:#2154a180 solid 5px;
+    border-radius: 100px;
+}
+.precio{
+    color: #108600;
+}
+.mainProductosStock div p{
     font-family: PTSansCaption;
+    text-align: center;
+    font-size: larger;
+    padding: 5px;
 }
-.mainProductosStock div section img{
-    height: 150px;
+.mainProductosStock div img{
+    height: 100%;
     padding: 10px;
+    border-radius: 200px;
 }
 
 
 /*vista tablet index*/
 
 @media screen and ( max-width: 768px){
-    /*header tablet*/
-    header{
-        display: grid;
-        grid-template-rows:auto;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas:
-        "divLogo divNav";
-    }
-    .divLogo{
-        grid-area: divLogo;
-    }
-    .divNav{
-        text-align: right;
-        padding: 15px;
-        grid-area: divNav;
-    }
-    .divNav nav ul{
-        display: flex;
-        flex-direction: column;
-    }
-    .divNav nav ul li{
-        padding: 4px;
-    }
-
     /*main index tablet*/
 
     .mainIndex{
@@ -341,19 +326,11 @@ footer div a img{
 
     /*footer tablet*/
     footer{
-        display: flex;
-        flex-direction: row;
-    }
-    footer h2{
-        margin: 10px;
+        display: grid;
+        grid-template-columns: 80% 20%;
     }
     footer div{
-        margin-top: 12px;
-        margin-left:180px;
-        
-    }
-    footer div a{
-        padding:10px;
+        display: flex;
     }
     /*productos, section teblet*/
     
@@ -364,7 +341,6 @@ footer div a img{
     }
     .productosInfo img{
         height: 420px;
-
     }
     .productosInfo div{
         text-align: center;
@@ -381,10 +357,9 @@ footer div a img{
     .mainProductos{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         justify-items: center;
         grid-template-areas: 
-        "tituProductos"
         "macetas"
         "accesorios"
         "inciensos" 
@@ -401,7 +376,7 @@ footer div a img{
         display: flex;
         flex-direction: column;
         text-align: center;
-        margin-bottom:30px;
+        margin-top:30px;
     }
     .divAccesorios{
         grid-area: accesorios;
@@ -429,6 +404,20 @@ footer div a img{
         margin: 10px;
     }
     .mainProductos div a img{
-        height: 300px;
+        width: 50%;
+        height: 100%;
+    }
+    /*¿quienes somos? tablet*/
+
+    .infoQuienesSomos{
+        display:flex;
+        flex-direction: column;
+    }
+    .mainProductosStock{
+        display: flex;
+        flex-direction: column;
+    }
+    .mainProductosStock div img{
+        max-height: 600px;
     }
 }
