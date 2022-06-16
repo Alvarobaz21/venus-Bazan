@@ -21,6 +21,8 @@ header nav a img {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map */
 *{
   margin: 0;
   padding: 0;
@@ -34,31 +36,6 @@ header nav a img {
   font-family:PTSansCaption;
   src: url(../fonts/PTSansCaption-Regular.ttf);
 }
-
-/*header*/
-/*
-header{
-  background-color: #ff9741;
-  background-image: linear-gradient(315deg, #b6440f 0%, #ff9e35 74%);
-  border: #ffae0065 1px solid;
-}
-
-.logo{
-    max-height: 100px;
-    width: 100%;
-}
-.navMod{
-    font-size:medium;
-    display: flex;
-    justify-content: end;
-}
-.navMod ul li{
-    margin-left:25px;
-}
-.navMod ul li:hover{
-  text-decoration: underline;
-}
-
 
 /*main index*/
 .mainIndex {
